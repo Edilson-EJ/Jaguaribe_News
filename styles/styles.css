@@ -1,0 +1,67 @@
+:root{
+
+    --azul: #381be3;
+    --branco: #ffffff;
+    --text_topo:#020001;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    background-color: var(--azul);
+    justify-content: space-around;
+}
+
+.title{
+    display: flex;
+    color: var(--branco);
+
+}
+
+.text_topo{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+#divBusca{
+    background-color:var(--branco);
+    border:solid 2px var(--azul);
+    border-radius:10px;
+    width:16.75rem;
+    height:32px;
+}
+
+#txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:191px;
+}
+
+#btnBusca{
+    border:none;
+    float:left;
+    height:32px;
+    border-radius:0 7px 7px 0;
+    width:70px;
+    font-weight:bold;
+    background:var(--text_topo);
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.entrar a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--branco);
+    font-size: 1.5rem;
+}
+

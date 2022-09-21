@@ -2,7 +2,9 @@
 
     --azul: #381be3;
     --branco: #ffffff;
+    --vermelho: #df1c0d;
     --text_topo:#020001;
+    --cinza: #f5e4af ;
 }
 
 body{
@@ -10,16 +12,49 @@ body{
     margin: 0;
 }
 
+/* Topo da pagina */
+
 header{
     display: flex;
-    background-color: var(--azul);
+    background-color: var(--vermelho);
     justify-content: space-around;
+    align-items: center;
 }
 
-.title{
+.topo_pagina{
     display: flex;
-    color: var(--branco);
+    color: var(--text_topo);
 
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+
+.barrinha-menu {
+    height: 3px;
+    width: 2rem;
+    background-color: var(--text_topo);
+    display: block;
+    margin: 4px;
+    transition: width 2s ease, margin-left 2s ease;
+    cursor: pointer;
+}
+
+
+
+div:hover .barrinha-menu:nth-child(2) {
+    margin-left: 15px;
+}
+
+div:hover .barrinha-menu {
+    width: 35px;
+    transition: width 2s ease, margin-left 2s ease;
 }
 
 .text_topo{
@@ -30,38 +65,61 @@ header{
 
 #divBusca{
     background-color:var(--branco);
-    border:solid 2px var(--azul);
+    border:solid 2px var(--text_topo);
     border-radius:10px;
-    width:16.75rem;
-    height:32px;
+    width:8rem;
+    height:1.8rem;
 }
 
 #txtBusca{
     float:left;
     background-color:transparent;
+    border:solid 2px var(--vermelho);
+    border-radius:10px;
     padding-left:5px;
-    font-size:18px;
+    font-size:1.4;
     border:none;
-    height:32px;
-    width:191px;
+    width:7.5rem;
+    height:1.6rem;
+
 }
 
-#btnBusca{
-    border:none;
-    float:left;
-    height:32px;
-    border-radius:0 7px 7px 0;
-    width:70px;
-    font-weight:bold;
-    background:var(--text_topo);
-    color: var(--branco);
-    cursor: pointer;
-}
 
 .entrar a{
     text-decoration: none;
     list-style: none;
-    color: var(--branco);
+    color: var(--text_topo);
     font-size: 1.5rem;
 }
 
+/* Menu de navegação*/
+
+.menu_navegação{
+
+    text-decoration: none;
+    list-style: none;
+}
+
+.navegação{
+    height: 100%;
+    width: 15rem;
+    font-size: 1.5rem;
+    background-color: var(--vermelho);
+    display: block;
+}
+
+.navegação_off{
+    display: none;
+}
+
+.navegação ul{
+    margin: 0;
+    padding: 1rem 0rem 1rem 1rem;
+}
+
+.navegação a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--text_topo);
+    
+}

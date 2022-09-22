@@ -7,5 +7,4 @@ function menu(){
 
     navegação.classList.toggle('navegação_off');
 
-    console.log(navegação)
 }

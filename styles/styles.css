@@ -127,3 +127,47 @@ div:hover .barrinha-menu {
     color: var(--text_topo);
     
 }
+
+/* Noticias*/
+
+.noticias{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.divPai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    width: 60rem;
+}
+
+.divFilho{
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+.img_noticia img{
+    width: 20rem;
+    height: 16rem;
+    padding-right: 1rem;
+}
+
+.descript article{
+    margin-bottom: 2rem;
+}
+
+.author{
+    display: flex;
+
+}
+
+.link{
+    text-decoration: none;
+}

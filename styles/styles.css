@@ -100,16 +100,20 @@ div:hover .barrinha-menu {
     list-style: none;
 }
 
+.navegação_off{
+    display: none;
+    height: 100%;
+    width: 15rem;
+    font-size: 1.5rem;
+    background-color: var(--vermelho);
+}
+
 .navegação{
     height: 100%;
     width: 15rem;
     font-size: 1.5rem;
     background-color: var(--vermelho);
     display: block;
-}
-
-.navegação_off{
-    display: none;
 }
 
 .navegação ul{

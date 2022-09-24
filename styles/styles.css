@@ -103,6 +103,7 @@ div:hover .barrinha-menu {
 .navegação_off{
     display: none;
     height: 100%;
+    position: absolute;
     width: 15rem;
     font-size: 1.5rem;
     background-color: var(--vermelho);
@@ -111,9 +112,11 @@ div:hover .barrinha-menu {
 .navegação{
     height: 100%;
     width: 15rem;
+    position: absolute;
     font-size: 1.5rem;
     background-color: var(--vermelho);
     display: block;
+    
 }
 
 .navegação ul{
@@ -130,11 +133,16 @@ div:hover .barrinha-menu {
 
 /* Noticias*/
 
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .noticias{
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
     
 }
 
@@ -142,21 +150,24 @@ div:hover .barrinha-menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30rem;
+    box-shadow: 5px 5px 5px 5px black;
+    height: 20rem;
     width: 60rem;
+    margin-top: 2rem;
 }
 
 .divFilho{
     display:flex;
     flex-direction: column;
-    gap: 2rem;
-    
+    gap: 1rem;
+
 }
 
 .img_noticia img{
     width: 20rem;
     height: 16rem;
     padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .descript article{
@@ -170,4 +181,41 @@ div:hover .barrinha-menu {
 
 .link{
     text-decoration: none;
+}
+
+/* FOOTER*/
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: var(--vermelho);
+    color: var(--text_topo);
+    gap: 0.3rem;
+    margin-top: 2rem;
+}
+
+.subtitle{
+    font-size: 2rem;
+}
+
+.rodape_politicas {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1rem;
+}
+
+
+
+.rodape_infor{
+    display: flex;
+    font-size: 1rem;
+    gap: 1rem;
+}
+
+.rodape_direitos{
+    font-size: 1rem;
+    padding-bottom: 2rem;
 }

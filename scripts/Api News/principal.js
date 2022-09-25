@@ -8,11 +8,13 @@ fetch(`https://newsapi.org/v2/top-headlines?country=br&category=general&int=10&a
     console.log(jsonParsed)
 
     const noticias = document.querySelector('.noticias')
+    const noticias_later = document.querySelector('noticias_later')
 
     jsonParsed.articles.forEach(element => {
         
         const author = element.author
         const description = element.description
+        const contente = element.content
         const data_publi = element.publishedAT
         const title =  element.title
         const link_noticia = element.url 
@@ -20,14 +22,14 @@ fetch(`https://newsapi.org/v2/top-headlines?country=br&category=general&int=10&a
 
 
         if(img_noticia != null){
-            create_noticias(author, description, data_publi, title, link_noticia,img_noticia, noticias);
+            create_noticias(author, description, data_publi, title, link_noticia,img_noticia,contente, noticias, noticias_later);
         }
         
     });
 
 })
 
-function create_noticias(author, description, data_publi, title, link_noticia,img_noticia, noticias_principal){
+function create_noticias(author, description, data_publi, title, link_noticia,img_noticia,contente, noticias_principal,noticias_laterais){
 
     const divPai = document.createElement('div')
     const divFilho = document.createElement('div')
@@ -57,6 +59,7 @@ function create_noticias(author, description, data_publi, title, link_noticia,im
     divFilho.classList.add('divFilho')
     link_noti.classList.add('link')
 
+
     img_not.src = img_noticia
     h3Title.textContent  = title
     articleDes.textContent = description
@@ -64,6 +67,7 @@ function create_noticias(author, description, data_publi, title, link_noticia,im
     link_noti.href = link_noticia
     h6Author.textContent = author
     pDataPubli.textContent = data_publi
+
 
     divPai.appendChild(divImg_noticia)
     divPai.appendChild(divFilho)
@@ -81,6 +85,6 @@ function create_noticias(author, description, data_publi, title, link_noticia,im
 
     divAuthor.appendChild(h6Author)
     divAuthor.appendChild(pDataPubli)
-
+    
 
 }

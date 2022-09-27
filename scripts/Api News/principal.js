@@ -45,16 +45,12 @@ function create_noticias(author, description, data_publi, title, link_noticia,im
     const articleDes = document.createElement('article')
     const link_noti = document.createElement('a')
 
-    const divAuthor = document.createElement('div')
-    const  h6Author = document.createElement('h6')
-    const  pDataPubli = document.createElement('p')
 
 
     divImg_noticia.classList.add('img_noticia')
     divInforNot.classList.add('inforNot')
     divTitle.classList.add('title')
     divDescrip.classList.add('descript')
-    divAuthor.classList.add('author')
     divPai.classList.add('divPai')
     divFilho.classList.add('divFilho')
     link_noti.classList.add('link')
@@ -65,15 +61,13 @@ function create_noticias(author, description, data_publi, title, link_noticia,im
     articleDes.textContent = description
     link_noti.textContent = "Veja a notícia completa"
     link_noti.href = link_noticia
-    h6Author.textContent = author
-    pDataPubli.textContent = data_publi
+
 
 
     divPai.appendChild(divImg_noticia)
     divPai.appendChild(divFilho)
     divFilho.appendChild(divInforNot)
     divFilho.appendChild(divDescrip)
-    divFilho.appendChild(divAuthor)
     noticias_principal.appendChild(divPai)
 
     divImg_noticia.appendChild(img_not)
@@ -83,8 +77,6 @@ function create_noticias(author, description, data_publi, title, link_noticia,im
     divDescrip.appendChild(articleDes)
     divDescrip.appendChild(link_noti)
 
-    divAuthor.appendChild(h6Author)
-    divAuthor.appendChild(pDataPubli)
     
 
 }

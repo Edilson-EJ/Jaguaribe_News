@@ -1,6 +1,6 @@
 var chave_api = '608482c8296a477f921fc5019ffb9175'
 
-fetch(`https://newsapi.org/v2/top-headlines?country=br&category=entertainment&int=10&apiKey=608482c8296a477f921fc5019ffb9175`
+fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=608482c8296a477f921fc5019ffb9175`
 ).then((response) =>{
     return response.json();
 }).then((jsonParsed) => {

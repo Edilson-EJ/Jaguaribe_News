@@ -16,7 +16,9 @@ fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=608482c8296a477f92
 
 
     
+        if( img_entretenimento !=null && description_entretenimento != null){
             create_noticias_entrenimento(img_entretenimento, description_entretenimento, noticias_entrenimento);
+        }
 
         
     });

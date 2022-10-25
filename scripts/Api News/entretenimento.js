@@ -15,8 +15,10 @@ fetch(`https://newsapi.org/v2/top-headlines?country=br&category=entertainment&in
 
 
 
-    
+        if( img_entretenimento !=null && description_entretenimento != null){
             create_noticias_entrenimento(img_entretenimento, description_entretenimento, noticias_entrenimento);
+        }
+            
 
         
     });

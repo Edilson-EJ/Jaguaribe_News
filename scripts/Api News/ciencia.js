@@ -1,6 +1,6 @@
 var chave_api = '608482c8296a477f921fc5019ffb9175'
 
-fetch(`https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=608482c8296a477f921fc5019ffb9175`
+fetch(`https://newsapi.org/v2/top-headlines?country=br&category=science&int=10&apiKey=608482c8296a477f921fc5019ffb9175`
 ).then((response) =>{
     return response.json();
 }).then((jsonParsed) => {
@@ -16,7 +16,9 @@ fetch(`https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=608482c8296a
 
 
     
+        if( img_entretenimento !=null && description_entretenimento != null){
             create_noticias_entrenimento(img_entretenimento, description_entretenimento, noticias_entrenimento);
+        }
 
         
     });

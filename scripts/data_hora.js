@@ -13,31 +13,34 @@ const data_clima = document.querySelector("#data")
 
 data_clima.innerText = semanas[dia_semana] + " , " + dia + " de " + meses[mes] + " de " + ano;
 
-function moveRelogio(){
+
     
-var horas = data.getHours();
-var minutos = data.getMinutes();
-var segundos = data.getSeconds();
-
-const hora_clima = document.querySelector("#hora");
-
-if(horas.lenght == 1){
-    horas = "0" + horas
-}
-
-if(minutos.lenght == 1){
-    minutos = "0" + minutos
-}
-
-if(segundos.lenght == 1){
-    segundos = "0" + segundos
-}
-
-console.log(segundos)
-
-hora_clima.innerText =  horas + ":" + minutos +":" + segundos
 
 
-}
 
-setTimeout("moveRelogio()",1000);
+
+const relogio = setInterval(function time(){
+
+    const hora_clima = document.querySelector("#hora");
+
+    let dateToday = new Date();
+    let horas = dateToday.getHours()
+    let minutos = dateToday.getMinutes()
+    let segundos = dateToday.getSeconds()
+
+    if(horas < 10){
+        horas = '0' + horas
+    }
+
+    if(minutos < 10){
+        minutos = '0' + minutos
+    }
+
+    if(segundos < 10){
+        segundos = '0' + segundos
+    }
+
+    hora_clima.textContent = horas + ':' + minutos + ':' + segundos 
+
+})
+

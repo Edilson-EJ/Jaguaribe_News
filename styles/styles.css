@@ -19,14 +19,15 @@ body{
 
 header{
     display: flex;
-    background-color: var(--vermelho);
+    background-color: #000;
+    
     justify-content: space-around;
     align-items: center;
 }
 
 .topo_pagina{
     display: flex;
-    color: var(--text_topo);
+    color: #f9f9f9;
 
 }
 
@@ -109,7 +110,7 @@ div:hover .barrinha-menu {
     position: absolute;
     width: 15rem;
     font-size: 1.5rem;
-    background-color: var(--vermelho);
+    background-color: #000;
 
 }
 
@@ -118,7 +119,7 @@ div:hover .barrinha-menu {
     width: 15rem;
     position: absolute;
     font-size: 1.5rem;
-    background-color: var(--vermelho);
+    background-color: #000;
     
     display: block;
     
@@ -132,13 +133,13 @@ div:hover .barrinha-menu {
 .navegação a {
     text-decoration: none;
     list-style: none;
-    color: var(--text_topo);
+    color: #fff;
     
 }
 
 .navegação a:hover{
     scale: 1;
-    color: var(--branco);
+    color: var(--vermelho);
 }
 
 /* Noticias topo da pagina*/
@@ -269,8 +270,8 @@ div:hover .barrinha-menu {
     justify-content: center;
     align-items: center;
     margin: auto;
-    background-color: var(--vermelho);
-    color: var(--branco);
+    background-color: #000;
+    color: #fff;
     gap: 0.3rem;
     margin-top: 2rem;
 }

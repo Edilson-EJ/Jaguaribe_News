@@ -24,13 +24,13 @@ fetch(`http://api.openweathermap.org/data/2.5/weather?q=jaguaribe&langpt-b&units
         const humidade = jsonParsed.main.humidity 
 
         const temperatura_atual = document.getElementById('temp_atual_jb');
-        temperatura_atual.innerText = ' : ' + temp_atual + '°'
+        temperatura_atual.innerText = ' : ' + temp_atual + ' °C'
 
         const temperatura_mx = document.getElementById('temp_max_jb');
-        temperatura_mx.innerText = ' : ' + temperatura_max + '°'
+        temperatura_mx.innerText = ' : ' + temperatura_max + ' °C'
 
         const temperatura_mn = document.getElementById('temp_min_jb');
-        temperatura_mn.innerText = ' : ' + temperatura_min+ '°'
+        temperatura_mn.innerText = ' : ' + temperatura_min+ ' °C'
 
         const humidade_temp = document.getElementById('humidade_jb');
         humidade_temp.innerText =' : ' +  humidade + '%'

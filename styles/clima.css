@@ -1,5 +1,5 @@
 body{
-    background: url(/img/clima.jpg) repeat;
+    background: url(/img/climateste.jpg) repeat;
     
     
 }
@@ -44,11 +44,6 @@ body{
 .lateral{
     padding-left: 10rem;
     
-}
-
-.lateral img{
-    
-    height: 3rem;
 }
 
 

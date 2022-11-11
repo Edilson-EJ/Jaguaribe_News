@@ -15,13 +15,13 @@ fetch(`http://api.openweathermap.org/data/2.5/weather?q=sãomiguel&langpt-b&unit
         const humidade = jsonParsed.main.humidity 
 
         const temperatura_atual = document.getElementById('temp_atual_sm');
-        temperatura_atual.innerText = ' : ' + temp_atual + '°'
+        temperatura_atual.innerText = ' : ' + temp_atual + ' °C'
 
         const temperatura_mx = document.getElementById('temp_max_sm');
-        temperatura_mx.innerText = ' : ' + temperatura_max + '°'
+        temperatura_mx.innerText = ' : ' + temperatura_max + ' °C'
 
         const temperatura_mn = document.getElementById('temp_min_sm');
-        temperatura_mn.innerText = ' : ' + temperatura_min+ '°'
+        temperatura_mn.innerText = ' : ' + temperatura_min+ ' °C'
 
         const humidade_temp = document.getElementById('humidade_sm');
         humidade_temp.innerText = ' : ' + humidade + '%'

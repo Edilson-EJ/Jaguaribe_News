@@ -15,13 +15,13 @@ fetch(`http://api.openweathermap.org/data/2.5/weather?q=natal&langpt-b&units=met
         const humidade = jsonParsed.main.humidity 
 
         const temperatura_atual = document.getElementById('temp_atual_nt');
-        temperatura_atual.innerText = ' : ' + temp_atual + '°'
+        temperatura_atual.innerText = ' : ' + temp_atual + ' °C'
 
         const temperatura_mx = document.getElementById('temp_max_nt');
-        temperatura_mx.innerText = ' : ' + temperatura_max + '°'
+        temperatura_mx.innerText = ' : ' + temperatura_max + ' °C'
 
         const temperatura_mn = document.getElementById('temp_min_nt');
-        temperatura_mn.innerText = ' : ' + temperatura_min+ '°'
+        temperatura_mn.innerText = ' : ' + temperatura_min+ ' °C'
 
         const humidade_temp = document.getElementById('humidade_nt');
         humidade_temp.innerText = ' : ' + humidade + '%'

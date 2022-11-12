@@ -7,3 +7,4 @@ fetch(`http://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL,GBP-B
 
 
 })
+

@@ -1,0 +1,59 @@
+
+
+
+function buscaConteudoNaApi(){
+
+    const conteudo_pesquisa = document.querySelector("#txtBusca")
+
+    const conteudo = conteudo_pesquisa.value 
+
+    console.log("pesquisa: ", conteudo)
+
+    var chave_api = '608482c8296a477f921fc5019ffb9175'
+
+
+
+fetch(`https://newsapi.org/v2/top-headlines?q=${conteudo}&apiKey=608482c8296a477f921fc5019ffb9175`
+).then((response) =>{
+    return response.json();
+}).then((jsonParsed) => {
+    console.log(jsonParsed)
+
+    const noticias_entrenimento = document.querySelector('.noticias_entre')
+
+    jsonParsed.articles.forEach(element => {
+        
+        const img_entretenimento = element.urlToImage 
+        const description_entretenimento = element.description 
+
+
+
+    
+        if( img_entretenimento !=null && description_entretenimento != null){
+            create_noticias_entrenimento(img_entretenimento, description_entretenimento, noticias_entrenimento);
+        }
+
+        
+    });
+
+})
+
+function create_noticias_entrenimento( img_entretenimento, description_entretenimento, noticias_ent){
+
+    const divPai = document.createElement('div')
+    const imgEntret = document.createElement('img')
+    const pDescrip = document.createElement('p')
+
+    divPai.classList.add('conteudo_entretenimento')
+
+    imgEntret.src = img_entretenimento
+    pDescrip.textContent = description_entretenimento
+
+    divPai.appendChild(imgEntret)
+    divPai.appendChild(pDescrip)
+    noticias_ent.appendChild(divPai)
+    
+
+}
+
+}

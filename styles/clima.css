@@ -1,6 +1,8 @@
 body{
-    background: url(/img/climateste.jpg) repeat;
-    
+    background: url(/img/climaChuva.jpg) repeat;
+    background-size: 100%;
+    width: auto;
+    height: auto;
     
 }
 
